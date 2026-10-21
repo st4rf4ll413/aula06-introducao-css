@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>CineWave Brasil</title>
+    </head>
+    <body style="margin: 0; font-family: Arial, Helvetica;background-color: #0f172a; color:#f8fafc;">
+        <header id="topo" style="background-color: #1e293d; padding: 28px 20px; text-align: center; border-bottom: 4px solid #38bdf8">
+            <h1 style="margin:0; color: #38bdf8; font-size: 34px; letter-spacing: 1px;">CineWave Apresenta</h1>
+            <p style="margin: 8px 0 18px 0;">Seu portal de ingressos digitais</p>
+            <nav style="background-color: #0f172a; padding: 12px; border-radius: 8px; display: inline-block; border: 1px solid #334155;">
+                <a style="color: #38bdf8; text-decoration: none; margin: 0 14px; font-weight: bold;" href="#destaques">Em destaque</a>
+                <a style="color: #38bdf8; text-decoration: none; margin: 0 14px; font-weight: bold;" href="#horarios">Horários de Estreia</a>
+                <a style="color: #38bdf8; text-decoration: none; margin: 0 14px; font-weight: bold;" href="#promocao">Promoções</a>
+                <a style="color: #38bdf8; text-decoration: none; margin: 0 14px; font-weight: bold;" href="#ingressos">Ingressos</a>
+            </nav>
+        </header>
+        <main>
+            <section id="destaques">
+                <article>
+                    <h2>Filme da Semana: Desventuras do Coelho Jorge</h2>
+                    <video controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    </video>
+                </article>
+            </section>
+            <section id="horarios">
+                <h2>Tabela de Sessões e Preços</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Sala</th>
+                            <th>Formato</th>
+                            <th>Horário</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sala 01</td>
+                            <td>IMAX 3D</td>
+                            <td>19:30</td>
+                            <td>36,00</td>
+                        </tr>
+                        <tr>
+                            <td>Sala 02</td>
+                            <td>VIP 2D Dublado</td>
+                            <td>20:45</td>
+                            <td>28,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <aside id="promocao">
+                <p>Promoção da Semana: <b>Toda terça e quarta-feira meia entrada</b></p>
+            </aside>
+            <section id="ingressos">
+                <h2>Garanta seu Ingresso</h2>
+                <form action="#">
+                    <label for="nome_completo">Nome Completo:</label>
+                    <input type="text" id="nome_completo" name="nome_completo" placeholder="Informe seu nome completo" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Informe seu E-mail" required>
+
+                    <label for="quantidade">Quantidade de Ingressos</label>
+                    <input type="number" name="quantidade" id="quantidade" placeholder="Informe a quantidade de ingressos" required>
+
+                    <button type="submit">Confirmar compra de ingressos</button>
+                </form> 
+            </section>
+        </main>
+    </body>
+</html>
